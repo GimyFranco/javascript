@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="jj" width="800" height="800"></canvas>
+   fffff
+    <script>
+       var canvas = document.getElementById('jj');
+       var c = canvas.getContext('2d');
+
+       var i;
+       for(i=1; i < 5; i++){
+
+       c.beginPath();
+       c.fillStyle = 'blue';
+       c.arc(100+i*160, 100, 60, 0, 2*Math.PI);
+       c.stroke();
+       c.fill();
+
+       };
+        
+    </script>
+
+
+</body>
+</html>
